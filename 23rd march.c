@@ -1,9 +1,9 @@
+
 #include<stdio.h>
 #include<stdlib.h>
 typedef struct mynode
 {
     int i;
-
     struct mynode *next,*bottom;
 }NODE;
 NODE readinfo(NODE *p)
@@ -68,7 +68,10 @@ NODE *insertfront(NODE* first)
 
 int main()
 {
+
     NODE *head=NULL;
+    NODE *x,*y;
+    //NODE *head=NULL;
     int i,n;
     printf("Enter number of elements for 1st list:");
     scanf("%d",&n);
@@ -108,6 +111,8 @@ int main()
     printf("data entered:\n");
     align(head);
     display(head);
+    
+
 
 
 }
